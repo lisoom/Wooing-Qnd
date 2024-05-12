@@ -3,17 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=""></script>
     <title>WOOIN</title>
+    <style>
+        @font-face {
+            font-family: 'korean';
+            src: url(./fonts/NanumPenScript-Regular.ttf);
+        }
+        @font-face {
+            font-family: 'english';
+            src: url(./fonts/Lobster-Regular.ttf);
+        }
+        :root{
+            font-family: 'korean';
+            --main-color:#
+        }
+
+        .wrap{
+            width: 960px;
+        }
+        .img-box{
+            width: 500px;
+        }
+        img{
+            width: 100%;
+        }
+        .sec01 h2{
+            text-transform: capitalize;
+            font-family: 'english';
+        }
+        .swiper {
+            width: 600px;
+            height: 300px;
+        }
+        @media(min-width:360px;){
+            .img-box{
+                width: 300px;
+            }
+        }
+    </style>
 </head>
 <body>
     <section class="wrap">
         <header class="header">
             <div class="container">
-                header               
+                <h1>짱우잉 박물관</h1>
+                <img src="./images/ENFJ.jpg" alt="wooinjjang">               
             </div>
         </header>
-        <section class="sec sec01">우</section>
-        <section class="sec sec02">잉</section>
+        <section class="sec sec01">
+            <div class="container">
+                <h2>First time we met</h2>
+                <p>처음부터 선전포고를 한 우인</p>
+                <div class="txt-box">
+                    <p>
+                        아직은 많이 서툴지만,
+                        <br>원없이 원두랑 놀면서
+                        <br>유복한 방송 만들고 싶습니다
+                        <br>원하는 거 있으면 언제든 얘기해주고
+                        <br>두고봅시다 원두들                
+                    </p>
+                    <span>장우인</span>
+                </div>
+                
+                <video src="./images/"></video>
+            </div>
+        </section>
+        <section class="sec sec02">
+            <div class="container">
+                <h2>놀라울 체력으로 깜땨야! 하게 만든 우잉쨩</h2>
+                <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <h3>분명 5천보 미숀인데, 15382보 달성</h3>
+        <div class="img-box">
+            <img src="./images/20230910_-_5천보_1회.jpg" alt="OMG15382">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <h3>그 후에도 이어진 우잉쨩의 5천보 미션</h3>
+        <div class="img-box">
+            <img src="./images/20230911_-_5천보_2회.jpg" alt="omg2">
+        </div>
+      </div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+                
+            </div>
+        </section>
         <section class="sec sec03">짱</section>
         <footer class="footer">
             <div class="container">
@@ -21,6 +112,28 @@
             </div>
         </footer>
     </section>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
 </body>
 </html>
