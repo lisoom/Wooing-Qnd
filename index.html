@@ -13,6 +13,11 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>WOOIN</title>
     <style>
+        *{
+            box-sizing: border-box;
+            margin: 0 auto;
+            padding: 0;
+        }
         @font-face {
             font-family: 'korean';
             src: url(./fonts/NanumPenScript-Regular.ttf);
@@ -22,7 +27,7 @@
             font-family: 'korean';
             --main-color:#47303e;
 
-            font-size: 14px;
+            font-size: 18px;
             color: var(--main-color);
 
         }
@@ -31,9 +36,15 @@
             max-width: 960px;
         }
         .txt-box01{
+            margin-top: 1em;
             width: 300px;
+            padding: 1em;
             background-color: peachpuff;
-  }
+        }
+        .txt-box02{
+            margin-top: 1em;
+            padding: 1em;
+        }
         .img-box{
             width: 500px;
         }
@@ -47,16 +58,17 @@
             font-size: 0.8em;
         }
         .sec01{
-            background: url(./images/생일_초대장.jpg) no-repeat left;
+            margin-top: 1em;
+            background: url(./images/생일_초대장.jpg) no-repeat center;
             background-size: contain;
-            color: white;
+            color: var(--main-color);
         }
         .sec01 h2{
             text-transform: capitalize;
         }
         .swiper {
             width: 600px;
-            height: 300px;
+            height: 600px;
         }
         .swiper-slide{
             padding: 2em;
@@ -97,7 +109,48 @@
                         우리 앞으로 각자 나아갈 길에서도 늘 행복하게 잘 지내자!<br>
                         사랑해💝🐮
                     </p>
-                </div>
+                    <p>
+                        P.S 꼭 기억해야할 사항 짱우잉의 3대 375 <br>
+                        우리 다음에 만날땐 400찍는거야 우잉아! 히히 기대한다~~
+                    </p>
+        </div>
+        <div class="txt-box02" style="background: var(--main-color); color: #fff;">
+            <p>
+                2024.05.30 <br>
+                우잉이 잘 지내고 있어?
+                <br>늘 건강하고, 아프지 마 우인아! 네 건강이 어디서든 최선이라는 거 잊지 말고!
+                <br>오늘의 네가 어제의 너보다 더 행복하길 늘 바랄게.
+                <br>아 참 나는 저번에 강남점 카페에서 네가 써놓은 포스트잇 봤어! 
+                <br>네 포토카드도 뽑고, 네 티코스터도 뽑고, 네가 추천한 초코라떼도 마시고, 
+                <br>꽤나 오랜만에 여유롭고 편한 한 때를 즐겼단다.
+                <br>너도 꼭 네 시간이 있었으면 좋겠다. 
+                <br>바빴던 하루를 정리할 수 있는 시간.
+                <br>아팠던 하루를 치유받을 수 있는 시간.
+                <br>아직도 선택의 기로에서 힘들어하고 있다면,
+                <br>부디 네 선택이 옳았다는 것만 믿고 나아가주길 바라 그대야.
+                <br>늘 너는 옳은 선택을 하고, 네가 할 수 있는 최선을 다해 나아가고 있다는 거 잊지 말고
+                <br>밤에는 더 평안하고, 고요한 밤이 되길 바라
+                <br>일때문에 잠 못자면 안된다잇~!
+                <br>아 참!
+                <br>나는 28일을 마지막으로 내가 배우던 웹디,웹퍼블리싱이 끝났어!
+                <br>나는 내 생각보다도 더 겁쟁이였는지,
+                <br>이쪽 일로 취직하러 나서는 그 발걸음이 참 쉽지가 않더라.
+                <br>자꾸 내 나이가 걱정되고 아무것도 없는 내 커리어가 걱정이 돼.
+                <br>근데 저번에 친구가 그러더라. 늦었다고 생각할 때가 정말 늦은 거지만, 그 늦은 시간 중 오늘이 가장 빠른거라고.
+                <br>그래서 다시 한번 나아가보려고 해.
+                <br>자그마한 자신감이라도 키우려고, 웹디자인 기능사 자격증을 따보려고..!
+                <br>나도 열심히 살아갈테니까, 우리 우잉이는 늘 열심히 잘 살고 있으니, 
+                <br>휴식만 꼭 잘 좀 취해죠 우인아. 꼭이야 정말!
+                <br>늘 네 앞길이 밝게 빛나길 바랄게.
+                <br>
+                <br>나는 요즘 날씨에 재즈 들으면서 다니면 기분이 좋더라:)
+                <br>너도 이 노래 듣고 기분 좋아졌으면 좋겠네 히히
+                <br>
+                <br>오늘의 추천곡은 Haley Reinhart - Honey, There's The Door
+                <br>
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sADOjoNux9o?si=59hchD2n20RqqjGh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         <section class="sec sec01">
             <div class="container">
                 
@@ -205,7 +258,7 @@
         <section class="sec sec03">짱우잉 최고</section>
         <footer class="footer">
             <div class="container">
-                footer
+                ALL THE PICTURES BY WOOIN JANG, PUBLISHED BY LISOOM
             </div>
         </footer>
     </section>
